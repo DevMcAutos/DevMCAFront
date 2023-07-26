@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario y Divs</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      #form-container {
+        text-align: center;
+      }
+
+      input[type="text"],
+      input[type="password"],
+      button {
+        margin: 5px;
+      }
+
+      #form-container,
+      .div-container {
+        width: 70%;
+      }
+
+      .div-container {
+        border: 2px solid black;
+        padding: 10px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="form-container">
+      <h2>Inicio de Sesión</h2>
+      <form>
+        <input type="text" placeholder="Usuario" required />
+        <input type="password" placeholder="Contraseña" required />
+        <button type="submit">Ingresar</button>
+      </form>
+    </div>
+
+    <hr />
+
+    <div class="div-container">
+      <h3>Div 1</h3>
+      <p>Contenido del Div 1</p>
+    </div>
+
+    <div class="div-container">
+      <h3>Div 2</h3>
+      <p>Contenido del Div 2</p>
+    </div>
+
+    <div class="div-container">
+      <h3>Div 3</h3>
+      <p>Contenido del Div 3</p>
+    </div>
+  </body>
+</html>
