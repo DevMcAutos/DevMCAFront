@@ -1,0 +1,67 @@
+*{
+    overflow-x: hidden;
+}
+
+.carrousel{
+    margin-top: 70px;
+}
+
+.ubicacion-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+h2{
+    overflow: hidden;
+}
+
+iframe{
+    width: 40vw;
+    height:40vh;
+}
+
+@media (max-width: 1279px){
+    .descripcion-container{
+        text-align: center;
+    }
+
+    iframe{
+        width: 50%;
+        height: 50vh;
+    }
+
+    .carrousel img{
+        width: 100%;
+    }
+
+    .ubicacion-container{
+        display: block;
+    }
+    
+}
+
+@media (max-width:900px){
+    #logo-celular{
+        position:block;
+        width: 100vw;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 15px;
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+
+    .carrousel{
+        margin-top:10px;
+    }
+}
+
+

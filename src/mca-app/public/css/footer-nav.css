@@ -1,0 +1,158 @@
+nav{
+    position: fixed;
+    top:0;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.scrolled {
+    opacity: 0.5; 
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+}
+
+.button-container a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+    transition: 0.5s;
+}
+
+.button-container a:hover{
+    color: rgb(255, 255, 255);
+    text-shadow:0 0 10px;
+}
+
+.active{
+    text-decoration: underline !important;
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+.divisor{
+    transform: translateY(17%) scale(1.1, 0.7);
+    overflow-x: hidden;
+}
+
+footer{
+    background-color: black;
+    color:white;
+    padding: 0;
+    
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.logos-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.logos-footer p{
+    margin: 0;
+}
+
+.footer{
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width:901px){
+    #logo-celular{
+        display: none;
+    }
+
+    #menu-button{
+        display: none;
+    }
+
+    #boton-abrir-menu{
+        display: none;
+    }
+}
+
+
+
+@media (max-width:900px){
+    nav{
+        position: fixed;
+        right: 0;
+        height: 100%;
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        overflow-y: hidden;
+        opacity: 1!important;
+        z-index: 1;
+    }
+
+    .button-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 1s;
+    }
+
+    .button-container a{
+        padding: 30px;
+    }
+
+    #logo-pc{
+        display: none;
+    }
+
+    #menu-button{
+        display: block;
+        position: absolute;
+        color: white;
+        top: 10px;
+        right: 15px;
+    }
+    
+    .open-menu{
+        transform: translateX(0%);
+        transition: 1s;
+    }
+
+    .close-menu{
+        transform: translateX(100%);
+        transition:1s;
+    }
+
+    #boton-abrir-menu{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        color: white;
+        margin:0;
+    }
+
+}
