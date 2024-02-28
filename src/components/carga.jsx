@@ -2,7 +2,7 @@ import { useEffect, useState, useRef} from "react";
 import React, { useForm, } from 'react-hook-form';
 import { Link, useNavigate } from "react-router-dom"
 import axios from "axios";
-import {put} from "@vercel/blob"
+// import {put} from "@vercel/blob"
 
 function Carga(){
     const [images, setImages] = useState([])
@@ -79,38 +79,26 @@ function Carga(){
             traction: data.traction,
             price:data.price,
             detalle:data.detalle,
-            image: images
+            image: [data.imagen1,data.imagen2,data.imagen3,data.imagen4,data.imagen5]
         }
-
-        const { url } = await put('articles/blob.txt', "gola mundo", { access: 'public' });    
-        console.log(url);
-        // const response = await fetch(
-        //     `https://dev-mca-api.vercel.app/imagen?filename=${images[0].filename}`,
-        //     {
-        //         method: 'POST',
-        //         body: images[0],
-        //     },
-        // );
         const link = "https://dev-mca-api.vercel.app/newCar"
-        setTimeout(() => {
-            // axios.post(link, car)
-            // .then(response => {       
+            axios.post(link, car)
+            .then(response => {       
                 
-            // // Manejar la respuesta exitosa
-            //     console.log('Respuesta del servidor:', response.data);
-            //     setResponse("Auto agregado con exito")
-            //     setTimeout(() => {
-            //         setResponse("")
-            //     }, 3000);
+            // Manejar la respuesta exitosa
+                console.log('Respuesta del servidor:', response.data);
+                setResponse("Auto agregado con exito")
+                setTimeout(() => {
+                    setResponse("")
+                }, 3000);
                 
-            // })
-            // .catch(error => {
-            // // Manejar errores
-            //     console.error('Error al hacer la solicitud:', error);
+            })
+            .catch(error => {
+            // Manejar errores
+                console.error('Error al hacer la solicitud:', error);
                 
-            //     setResponse("Fallo la carga")
-            // });
-        }, 1000);
+                setResponse("Fallo la carga")
+            });
             
         
         
@@ -163,8 +151,12 @@ function Carga(){
                         <input type="text" name="detalle" id="car-detalle" className="input-carga" {...register('detalle')}/>
                     </div>
                     <div>
-                        <label htmlFor="imagenPrincipal">File</label>
-                        <input type="file" name="imagenes" multiple id="car-images"{...register('images')}/>
+                        <label htmlFor="imagenPrincipal">Imagenes</label>
+                        <input type="text" name="imagen1" {...register("imagen1")}/>
+                        <input type="text" name="imagen2" {...register("imagen2")}/>
+                        <input type="text" name="imagen3" {...register("imagen3")}/>
+                        <input type="text" name="imagen4" {...register("imagen4")}/>
+                        <input type="text" name="imagen5" {...register("imagen5")}/>
                     </div>
                     <div>
                         <div className="images-container"></div>
