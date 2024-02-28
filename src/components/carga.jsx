@@ -82,27 +82,34 @@ function Carga(){
             image: images
         }
 
-        const { url } = await put('articles/imagen1.jpg', images[0], { access: 'public' });    
+        const { url } = await put('articles/blob.txt', "gola mundo", { access: 'public' });    
         console.log(url);
+        // const response = await fetch(
+        //     `https://dev-mca-api.vercel.app/imagen?filename=${images[0].filename}`,
+        //     {
+        //         method: 'POST',
+        //         body: images[0],
+        //     },
+        // );
         const link = "https://dev-mca-api.vercel.app/newCar"
         setTimeout(() => {
-            axios.post(link, car)
-            .then(response => {       
+            // axios.post(link, car)
+            // .then(response => {       
                 
-            // Manejar la respuesta exitosa
-                console.log('Respuesta del servidor:', response.data);
-                setResponse("Auto agregado con exito")
-                setTimeout(() => {
-                    setResponse("")
-                }, 3000);
+            // // Manejar la respuesta exitosa
+            //     console.log('Respuesta del servidor:', response.data);
+            //     setResponse("Auto agregado con exito")
+            //     setTimeout(() => {
+            //         setResponse("")
+            //     }, 3000);
                 
-            })
-            .catch(error => {
-            // Manejar errores
-                console.error('Error al hacer la solicitud:', error);
+            // })
+            // .catch(error => {
+            // // Manejar errores
+            //     console.error('Error al hacer la solicitud:', error);
                 
-                setResponse("Fallo la carga")
-            });
+            //     setResponse("Fallo la carga")
+            // });
         }, 1000);
             
         
