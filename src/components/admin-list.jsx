@@ -14,7 +14,7 @@ function AdminList({cars}){
                 <img src={cars.image[0]} alt="" className="imagen-miniatura"/>
                 <p className="nombre-admin">{cars.name}</p>
                 <div className="editar-borrar-cont">
-                    <Link to={`http://localhost:3000/admin/modificar/${cars._id}`}><img src="/img/lapiz-editar2.png" alt="boton-editar" className="editar-button" width="10%"/></Link>
+                    <Link to={`https://www.automotoresmc.com.ar/admin/modificar/${cars._id}`}><img src="/img/lapiz-editar2.png" alt="boton-editar" className="editar-button" width="10%"/></Link>
                     <p className="borrar-button" onClick={()=>{
                         const contenedor = document.getElementsByClassName("Noblur")
                         const cancelButton = document.getElementsByClassName("cancel-button")
@@ -34,7 +34,7 @@ function AdminList({cars}){
                             contenedor[0].classList.remove("blur")
                             contPregunta[0].classList.add("hidden")
                             contPregunta[0].classList.remove("visible")
-                            axios.delete(`http://localhost:8080/deleteCar/${cars._id}`)
+                            axios.delete(`https://dev-mca-api.vercel.app//deleteCar/${cars._id}`)
                             .then(res=>{
                                 console.log(res);
                                 setResponse("Auto eliminado")
@@ -56,7 +56,7 @@ function AdminList({cars}){
             ))}
         </div>
             <div className="button-carga-container">
-                <Link to={`http://localhost:3000/admin/carga`}> <button className="button-cargar-auto">Cargar Auto</button></Link>
+                <Link to={`https://www.automotoresmc.com.ar/admin/carga`}> <button className="button-cargar-auto">Cargar Auto</button></Link>
                 <p>{response}</p>
             </div>
         </div>

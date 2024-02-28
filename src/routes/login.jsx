@@ -11,7 +11,7 @@ function Login(){
     const divisor = document.getElementsByClassName("divisor")
     
     const onSubmit = (data)=>{
-        axios.post("http://localhost:8080/login", data)
+        axios.post("https://dev-mca-api.vercel.app/login", data)
         .then(res =>{
             document.cookie = `logged=true; max-age=${60*10}; path=/`
         }) .catch(err=>{

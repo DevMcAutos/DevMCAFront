@@ -17,15 +17,15 @@ function Pagination ({cars}){
     },[cars])
     return(
         <div className="pagination" role="navigation" aria-label="pagination">
-            {1 < params.pag ? <Link to={`http://localhost:3000/usados/${parseInt(params.pag)-1}`} className="pagination-previous">Anterior</Link> : <p className="invisiblePag">Anterior</p>}         
+            {1 < params.pag ? <Link to={`https://www.automotoresmc.com.ar/usados/${parseInt(params.pag)-1}`} className="pagination-previous">Anterior</Link> : <p className="invisiblePag">Anterior</p>}         
             <ul className="pagination-list">
             {array && array.map(pag=>{
                 return(
-                    <Link to={`http://localhost:3000/usados/${pag}`}><li className="pagination-link">{pag}</li></Link>
+                    <Link to={`https://www.automotoresmc.com.ar/usados/${pag}`}><li className="pagination-link">{pag}</li></Link>
                 )   
             })}
             </ul>
-            {paginas > params.pag ? <Link to={`http://localhost:3000/usados/${parseInt(params.pag)+1}`} className="pagination-next">Siguiente</Link> : <p className="invisiblePag">Siguiente</p>}
+            {paginas > params.pag ? <Link to={`https://www.automotoresmc.com.ar/usados/${parseInt(params.pag)+1}`} className="pagination-next">Siguiente</Link> : <p className="invisiblePag">Siguiente</p>}
             
         </div>
     )

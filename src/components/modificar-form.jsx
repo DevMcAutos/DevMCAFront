@@ -6,7 +6,7 @@ import axios from "axios";
 function ModificarForm(car) {
     const [response, setResponse] = useState("")
     function onSubmit(data){
-        axios.put(`http://localhost:8080/updateCar/${car._id}`, data)
+        axios.put(`https://dev-mca-api.vercel.app/updateCar/${car._id}`, data)
         .then(res=>{
             console.log(res);
             setResponse("Auto modificado")
@@ -18,7 +18,7 @@ function ModificarForm(car) {
     const { register, handleSubmit } = useForm();
     return(
     <div>
-        <Link to="http://localhost:3000/admin"><button>Volver</button></Link>
+        <Link to="https://www.automotoresmc.com.ar/admin"><button>Volver</button></Link>
         <form onSubmit={handleSubmit(onSubmit)}>
             <div className="formulario-carga">
                 <div>

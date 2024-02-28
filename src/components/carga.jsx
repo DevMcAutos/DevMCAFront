@@ -82,11 +82,11 @@ function Carga(){
         }
 
         
-        axios.post("http://localhost:8080/imagen", images)
+        axios.post("https://dev-mca-api.vercel.app/imagen", images)
         .then(res=>{
             console.log(res);
         })
-        const link = "http://localhost:8080/newCar"
+        const link = "https://dev-mca-api.vercel.app/newCar"
         setTimeout(() => {
             axios.post(link, car)
             .then(response => {       
@@ -114,7 +114,7 @@ function Carga(){
     const { register, handleSubmit } = useForm();
     return(
         <div className="contenedor-carga">
-            <Link to="http://localhost:3000/admin"><button>Volver</button></Link>
+            <Link to="https://www.automotoresmc.com.ar/admin"><button>Volver</button></Link>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="formulario-carga">
                     <div>

@@ -15,7 +15,7 @@ function CarDetail(car){
                         const segmentos = url.split('/');
                         const ID= segmentos[segmentos.length - 1]
                         const imagenesCont = document.getElementsByClassName("car-individual-images")
-                        fetch(`http://localhost:8080/getcars/${ID}`)
+                        fetch(`https://dev-mca-api.vercel.app/getcars/${ID}`)
                         .then(response => {
                             if (!response.ok) {
                                 throw new Error('La solicitud no fue exitosa');
