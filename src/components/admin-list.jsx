@@ -34,7 +34,7 @@ function AdminList({cars}){
                             contenedor[0].classList.remove("blur")
                             contPregunta[0].classList.add("hidden")
                             contPregunta[0].classList.remove("visible")
-                            axios.delete(`https://dev-mca-api.vercel.app//deleteCar/${cars._id}`)
+                            axios.delete(`https://dev-mca-api.vercel.app/deleteCar/${cars._id}`)
                             .then(res=>{
                                 console.log(res);
                                 setResponse("Auto eliminado")
