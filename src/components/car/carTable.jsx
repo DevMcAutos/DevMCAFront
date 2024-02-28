@@ -1,7 +1,7 @@
 import Item from "./carItem"
 function CarTable({items}){
     return(
-        <div>
+        <div className="car-container">
             {items && items.map(cars=>{
                 return(
                     <Item cars={cars} key={cars._id}></Item>

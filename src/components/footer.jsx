@@ -1,20 +1,20 @@
 function Footer(){
     return(
         <div className="footer">
-            <img src="img/triangulos-division.svg" alt="" className="divisor"/>
+            <img src="/img/triangulos-division.png" alt="" className="divisor"/>
             <footer>
                 <div className="footer-container">
                     <div className="logos-footer">
-                        <img src="" alt="whatsapp-image"/>
-                        <p>3518109760</p>
+                        <img src="/img/whatsapp.png" alt="whatsapp-image"/>
+                        <p>+54 9 3513 13-4173</p>
                     </div>
                     <div className="logos-footer">
-                        <img src="" alt="gmail-image" />
-                        <p>nicolima@gmail.com</p>
+                        <img src="/img/Gmail.png" alt="gmail-image" />
+                        <p>tomycardozo07@hotmail.com</p>
                     </div>
                     <div className="logos-footer">
-                        <img src="" alt="ubicacion-image" />
-                        <p>lorem impsum 272</p>
+                        <img src="/img/ubicacion.png" alt="ubicacion-image" />
+                        <p>RN9, Córdoba</p>
                     </div>
                 </div>
             </footer>

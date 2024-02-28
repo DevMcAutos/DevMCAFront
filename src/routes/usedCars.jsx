@@ -1,10 +1,13 @@
+
 import CarList from "../components/car/carList"
 
 function Used(){
+    document.title = "MC Automotores | Usados"
     return (
         <div>
-            <p>USADOS</p>
+            
             <CarList nuevo={false}/>
+            
         </div>
     );
 };

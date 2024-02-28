@@ -1,9 +1,14 @@
 import { Link } from "react-router-dom"
 
 function Item({cars}){
+    
     return(
-        
-        <Link to={cars._id}><p>{cars.name}</p></Link>
+        <Link to={`http://localhost:3000/usados/auto/${cars._id}`}>
+            <div className="car-item-container">
+                <img src={cars.image[0]} alt="" />
+                <p>{cars.name}</p>
+            </div>
+        </Link>
     )
 };
 

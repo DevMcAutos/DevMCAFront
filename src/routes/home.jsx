@@ -1,24 +1,16 @@
 
 function Home(){
+    document.title = "MC Automotores | Inicio"
+
     return(
         <div>
-            <p id="logo-celular">LOGO</p>
-            <p id="boton-abrir-menu">Abrir menu</p>
             <div className="carrousel">
-                <img src="img/Header1.jpeg" alt="Header"/>
+                <img src="/img/Header1.jpeg" alt="Header"/>
             </div>
             <div className="descripcion-container">
                 <h2>QUIENES SOMOS</h2>
-                <p>Lorem ipsum dolor sit amet 
-                    consectetur, 
-                    adipisicing elit. 
-                    Iusto nostrum, 
-                    cum est dolor eius 
-                    accusantium accusamus
-                    modi maiores. 
-                    Necessitatibus neque debitis 
-                    cumque earum molestias nisi error et, 
-                    quo nam deserunt.</p>
+                <p>Somos una empresa familiar ubicada en la entrada de colonia caroya especializados en camionetas y en vehículos diesel. brindamos el servicio para facilitarte el cambio de tu vehiculo u obtener tu primer auto! vendemos 0km usados (autos y camionetas) recibimos tu usado no importa el año! Consultar por disponibilidad y precio de los 0km
+Nos manejamos con todas las formas de pago</p>
             </div>
             <div className="ubicacion-container">
                 <h2>COMO LLEGAR</h2>

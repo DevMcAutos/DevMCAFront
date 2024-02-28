@@ -1,0 +1,66 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.pagination-list{
+    display: flex;
+    height: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.pagination-link{
+    cursor: pointer;
+    color: white;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-right: 2px;
+    margin-left: 2px;
+    border-style: solid;
+    background-color: black;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.pagination-previous{
+    cursor: pointer;
+    padding: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    font-weight: 500;
+    color: black;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.pagination-next{
+    cursor: pointer;
+    padding: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    font-weight: 500;
+    color: black;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.invisiblePag{
+    padding: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    font-weight: 500;
+    color: black;
+    margin-top: auto;
+    margin-bottom: auto;
+    visibility: hidden;
+}

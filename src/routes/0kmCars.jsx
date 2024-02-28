@@ -3,9 +3,9 @@ import CarList from "../components/car/carList"
 
 
 function News(){
+    document.title = "MC Automotores | 0km"
     return(
         <div>
-            <p>NUEVOS</p>
             <CarList nuevo={true}/>
         </div>
     );

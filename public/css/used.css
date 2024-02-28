@@ -1,0 +1,453 @@
+.form-container{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.search-bar{
+    display: flex;
+    margin-top: 10px;
+}
+
+.search-bar input{
+    margin: auto;
+    background-color: black;
+    color: white;
+    border: none;
+    height: 35px;
+    width: 350px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.search-bar input::placeholder{
+    color: white;
+    padding-left: 10px;
+}
+
+.search-bar button{
+    padding: 0;
+    background-image: url("../img/lupa.png");
+    background-size: contain;
+    background-position: center;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.search-bar-container{
+    display: flex;
+    align-items: center;
+}
+
+.ver-todos-form{
+    margin-left: 40px;
+}
+
+.ver-todos-form button{
+    border: 0px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.filters-closed{
+    visibility: hidden;
+    height: 0px;
+    transition: all 0.5s;
+
+}
+
+.filters-container{
+    margin:auto;
+    overflow-y: hidden;
+}
+
+#filters-box{
+    position: absolute;
+    width: 480px;
+    display: flex;
+}
+
+#filters-box div{
+    margin-top: 24px;
+    padding-left: 10px;
+    width: 120px;
+}
+
+#filters-box div p{
+    font-weight: 600;
+    position: absolute!important;
+    transform: translateY(-24px);
+    width: 100px;
+    margin: 0;
+}
+
+.brand label{
+    text-align: left;
+}
+
+.model label{
+    text-align: left;
+}
+
+.year label{
+    text-align: left;
+}
+
+#submit-filters{
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    background-color: black;
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+}
+
+#filters-button{
+    border: 0px;
+    background-color: black;
+    color: white;
+}
+
+.brand{
+    display: flex;
+    flex-direction: column;
+}
+
+.model{
+    display: flex;
+    flex-direction: column;
+}
+
+.year{
+    display: flex;
+    flex-direction: column;
+}
+
+.filters-button-container{
+    display: flex;
+    background-color: black;
+    color: white;
+}
+#filters-flecha{
+    margin: 0;
+    transform: rotate(180deg);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.transform180{
+    transform:rotate(0deg)!important;
+    transition: 0.5s;
+    overflow-y: hidden;
+}
+
+.filters-open{
+    visibility: visible;
+    background-color: white;
+    box-shadow: 0 0 10px;
+    color: black;
+    height: 200px;
+    transition: all 0.5s;
+}
+
+
+.car-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.car-item-container{
+    display: flex;
+    padding: 30px;
+    margin: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+    flex-direction: column;
+    max-width: 350px;
+    align-items: center;
+}
+.car-item-container img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    text-align: center;
+}
+
+.car-item-container p{
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+}
+
+.car-individual-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.car-individual-container p{
+    text-align: left;
+}
+
+.car-info{
+    display: block;
+    flex-wrap: wrap;
+    width: 30%;
+    height: 40%;
+    margin-top: 30px;
+    margin-left: 100px;
+    text-align: left;
+    background: linear-gradient(90deg, #c9c9c9 10%, transparent );
+    background: linear-gradient(#c9c9c9 30% , transparent );
+    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    animation: fade-in-left 1s ease;
+}
+
+.car-info p{
+    width: 50%;
+    font-size: 20px;
+    border-bottom-style:solid ;
+    border-bottom-color:rgb(0, 0, 0, 0.2) ;
+    border-width: 1px;
+}
+
+#back-menu-button{
+    margin-top: 70px;
+    display: flex;
+    margin-left: 30px;
+    justify-content: start;
+    border: 0px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.car-individual-images{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.imagenes-miniatura{
+    margin-left: 10px;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    animation: fade-in-right 1s ease;
+}
+
+
+@keyframes fade-in-right{
+    from{
+        transform:translateX(70%);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform:translateX(0%);
+    }
+}
+
+@keyframes fade-in-left{
+    from{
+        transform:translateX(-70%);
+        opacity:0;
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+#info-text{
+    font-weight: 800;
+    margin-left: 30px;
+    width: 50%;
+}
+
+.img-list{
+    cursor:pointer;
+    width: 200px;
+    height: 200px;
+    margin: 20px 0px 20px 20px ;
+    color: white;
+    object-fit: cover;
+}
+
+#car-image{
+    width: 800px;
+    height: 600px;
+    object-fit: cover;
+    animation: fade-in-left 1s ease;
+}
+
+#price{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+
+::-webkit-scrollbar {
+    width: 5px; 
+
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(75deg,#000000 14%,#202020 64%);
+    border-radius: 9px;
+}
+
+@media (max-width:900px){
+    .form-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 40px;
+    }
+
+    .invisible{
+        display: none!important;
+    }
+
+    .search-bar-container{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .ver-todos-form{
+        margin: 0;
+    }
+
+    .filters-container{
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    #filters-box{
+        width: 90%;
+    }
+
+    #filters-box div p{
+        width: 65px;
+    }
+
+    #filters-box div{
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+
+    .car-item-container{
+        padding: 0;
+        padding-bottom: 15px;
+
+    }
+}
+
+
+@media(min-width: 800px){
+    .car-item-container{
+        padding: 15px;
+    }
+
+}
+
+@media only screen and (min-width:800px) and (max-width:900px){
+    
+    .img-list{
+        width: 50%!important;
+    }
+}
+
+
+@media (max-width:900px){
+    .car-individual-images{
+        margin: 0;
+    }
+
+    #car-image{
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+        margin: auto;
+        display: none;
+    }
+
+    .car-individual-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .imagenes-miniatura{
+        display: flex;
+        margin: 0;
+        flex-wrap: wrap;
+        width: fit-content;
+        justify-content: center;
+    }
+
+    .img-list{
+        margin: 0;
+        width: 80%;
+        margin: 5px;
+    }
+
+    .img-list img{
+        width: 80%;
+    }
+
+    .car-info{
+        width: 80%;
+        margin: auto;
+    }
+
+    #info-text{
+        margin: auto;
+        margin-top: 5px;
+    }
+
+    #back-menu-button{
+        border: 0px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        margin:15px;
+    }
+
+    .car-info{
+        display: block;
+        outline: 0px;
+        text-align: left;
+        border-width: 0px;
+        margin: 0;
+        width: 100%;
+        padding-left: 5px;
+        background: linear-gradient(90deg, transparent, #c9c9c9 10%, transparent );
+    }
+
+    .car-info p{
+        width: 70%;
+        border-bottom-style:solid ;
+        border-width: 1px;
+    }
+
+    #info-text{
+        width: 100%;
+    }
+
+}
