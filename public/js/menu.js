@@ -35,7 +35,6 @@ setTimeout(() => {
             menu.classList.add('close-menu')
             menu.classList.remove('open-menu')
         }
-        e.preventDefault(); 
     });
 
 }, 500);
