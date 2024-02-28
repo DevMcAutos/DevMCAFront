@@ -47,6 +47,11 @@
     margin-top: 30px;
 }
 
+.imagenes-auto-carga{
+    display: flex;
+    flex-direction: column;
+}
+
 @media (max-width:900px){
     .formulario-carga{
         margin: auto;

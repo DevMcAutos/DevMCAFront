@@ -52,20 +52,6 @@ function Carga(){
     }
     }, [])
 
-    useEffect(()=>{
-        const imagenes = document.getElementById('car-images')
-        imagenes.addEventListener("change",function(event){       
-            const imagesContainer = document.getElementsByClassName("images-container");
-            imagesContainer[0].innerHTML = ""
-            setImages(imagenes.files)
-            for (let i = 0; i < imagenes.files.length; i++) {
-                const url = URL.createObjectURL(imagenes.files[i])
-                imagesContainer[0].innerHTML += `<img src="${url}" width="100%"/>`
-            }
-        })
-        
-    },[images])
-
     const onSubmit = async (data) =>{
 
         const car = {
@@ -82,9 +68,9 @@ function Carga(){
             image: [data.imagen1,data.imagen2,data.imagen3,data.imagen4,data.imagen5]
         }
         const link = "https://dev-mca-api.vercel.app/newCar"
-            axios.post(link, car)
+            axios.post("http://localhost:8080/newCar", car)
             .then(response => {       
-                
+                console.log(car.image);
             // Manejar la respuesta exitosa
                 console.log('Respuesta del servidor:', response.data);
                 setResponse("Auto agregado con exito")
@@ -150,13 +136,13 @@ function Carga(){
                     <label htmlFor="detalle" className="label-carga">Detalles:</label>
                         <input type="text" name="detalle" id="car-detalle" className="input-carga" {...register('detalle')}/>
                     </div>
-                    <div>
+                    <div className="imagenes-auto-carga">
                         <label htmlFor="imagenPrincipal">Imagenes</label>
-                        <input type="text" name="imagen1" {...register("imagen1")}/>
-                        <input type="text" name="imagen2" {...register("imagen2")}/>
-                        <input type="text" name="imagen3" {...register("imagen3")}/>
-                        <input type="text" name="imagen4" {...register("imagen4")}/>
-                        <input type="text" name="imagen5" {...register("imagen5")}/>
+                        <input type="text" className="car-images" name="imagen1" {...register("imagen1")}/>
+                        <input type="text" className="car-images" name="imagen2" {...register("imagen2")}/>
+                        <input type="text" className="car-images" name="imagen3" {...register("imagen3")}/>
+                        <input type="text" className="car-images" name="imagen4" {...register("imagen4")}/>
+                        <input type="text" className="car-images" name="imagen5" {...register("imagen5")}/>
                     </div>
                     <div>
                         <div className="images-container"></div>
