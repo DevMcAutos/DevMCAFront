@@ -68,7 +68,7 @@ function Carga(){
             image: [data.imagen1,data.imagen2,data.imagen3,data.imagen4,data.imagen5]
         }
         const link = "https://dev-mca-api.vercel.app/newCar"
-            axios.post("http://localhost:8080/newCar", car)
+            axios.post(link, car)
             .then(response => {       
                 console.log(car.image);
             // Manejar la respuesta exitosa
