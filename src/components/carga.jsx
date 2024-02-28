@@ -2,7 +2,7 @@ import { useEffect, useState, useRef} from "react";
 import React, { useForm, } from 'react-hook-form';
 import { Link, useNavigate } from "react-router-dom"
 import axios from "axios";
-const {put} = require("@vercel/blob")
+import {put} from "@vercel/blob"
 
 function Carga(){
     const [images, setImages] = useState([])
