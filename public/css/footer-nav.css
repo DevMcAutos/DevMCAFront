@@ -63,6 +63,7 @@ nav{
     overflow-x: hidden;
 }
 
+
 footer{
     background-color: black;
     color:white;
@@ -72,7 +73,7 @@ footer{
 .footer-container{
     display: flex;
     flex-direction: column;
-    transform: translateX(43%);
+    align-items: center;
 }
 
 .logos-footer{
@@ -130,7 +131,6 @@ footer{
     .footer-container{
         display: flex;
         flex-direction: column;
-        transform: translateX(30%);
     }
 
     nav{

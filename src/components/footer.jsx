@@ -4,6 +4,7 @@ function Footer(){
             <img src="/img/triangulos-division.png" alt="" className="divisor"/>
             <footer>
                 <div className="footer-container">
+                    <div className="contact-container">
                     <div className="logos-footer">
                         <img src="/img/whatsapp.png" alt="whatsapp-image"/>
                         <p>+54 9 3513 13-4173</p>
@@ -15,6 +16,7 @@ function Footer(){
                     <div className="logos-footer">
                         <img src="/img/ubicacion.png" alt="ubicacion-image" />
                         <p>RN9, Córdoba</p>
+                    </div>
                     </div>
                 </div>
             </footer>
