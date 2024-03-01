@@ -7,8 +7,8 @@ function Contact(){
             <div className="contact-container">
                     <div>
                     <div className="logos-contact">
-                    <Link to="https://web.whatsapp.com/send?phone=5493513134173" target="_blank"><img src="/img/whatsapp-negro.png" alt="whatsapp-image"/></Link>
-                        <Link to="https://web.whatsapp.com/send?phone=5493513134173" target="_blank"><p>+54 9 3513 13-4173</p></Link>
+                    <Link to="https://wa.me/5493513134173" target="_blank"><img src="/img/whatsapp-negro.png" alt="whatsapp-image"/></Link>
+                        <Link to="https://wa.me/5493513134173" target="_blank"><p>+54 9 3513 13-4173</p></Link>
                     </div>
                     <div className="logos-contact">
                         <img src="/img/Gmail-negro.png" alt="gmail-image" />
