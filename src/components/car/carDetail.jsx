@@ -48,8 +48,8 @@ function CarDetail(car){
                         <p>Combustible:<strong> {car.fuel}</strong></p>
                         <p>Traccion: <strong>{car.traction}</strong></p>
                         <p>Version: <strong>{car.version}</strong></p>
-                        <p>Kilometros: <strong>{car.kms}</strong></p>
-                        <p id='price'>Precio: $<strong>{car.price}</strong></p>
+                        <p>Kilometros: <strong>{new Intl.NumberFormat('es-ES').format(car.kms)}</strong></p>
+                        <p id='price'>Precio: $<strong>{new Intl.NumberFormat('es-ES').format(car.price)}</strong></p>
                     </div>
                     <div className='imagenes-miniatura'>    
                     </div>
