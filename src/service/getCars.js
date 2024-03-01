@@ -22,6 +22,8 @@ const getCars = (name,nuevo, filters)=>{
             for (let i = 0; i < data.length; i++) {
                 if(!data[i].new){  
                     if ((filters.brandListChecked.includes(data[i].brand) || filters.modelListChecked.includes(data[i].model) || filters.yearListChecked.includes(data[i].year))) {
+                        data[i].kms = data[i].kms.toLocateString('es-ES')
+                        data[i].price = data[i].price.toLocateString('es-ES')
                     resultado.push(data[i])
                     }
                 }else{
