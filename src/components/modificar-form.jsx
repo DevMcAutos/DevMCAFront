@@ -57,13 +57,19 @@ function ModificarForm(car) {
                     <label htmlFor="price" className="label-carga">Precio:</label>
                     <input type="text" name="price" id="car-price" className="input-carga" placeholder={car.price}{...register('price')}/>
                 </div>
-                <div>
-                    <label htmlFor="imagenPrincipal">File</label>
-                    <input type="file" name="imagenes" multiple id="car-images" {...register('images')}/>
-                </div>
-                <div>
-                    <div className="images-container"></div>
-                    
+                <div className="imagenes-auto-carga">
+                        <label htmlFor="imagenPrincipal">Imagenes</label>
+                        <input type="text" className="car-images" name="imagen1" {...register("imagen1")}/>
+                        <input type="text" className="car-images" name="imagen2" {...register("imagen2")}/>
+                        <input type="text" className="car-images" name="imagen3" {...register("imagen3")}/>
+                        <input type="text" className="car-images" name="imagen4" {...register("imagen4")}/>
+                        <input type="text" className="car-images" name="imagen5" {...register("imagen5")}/>
+
+                        <input type="text" className="car-images" name="imagen6" {...register("imagen6")}/>
+                        <input type="text" className="car-images" name="imagen7" {...register("imagen7")}/>
+                        <input type="text" className="car-images" name="imagen8" {...register("imagen8")}/>
+                        <input type="text" className="car-images" name="imagen9" {...register("imagen9")}/>
+                        <input type="text" className="car-images" name="imagen10" {...register("imagen10")}/>
                 </div>
                 <button className="post-button" type="submit">Modificar</button>
             </div>

@@ -17,10 +17,19 @@
     margin-bottom: 30px;
 }
 
+.carousel-item img{
+    height: 630px;
+}
+
 .nuestros-autos .card {
     width: 20%;;
 }
 
+.carrousel{
+    overflow: hidden;
+    height: 630px;
+    object-fit: cover;
+}
 
 .nuestros-autos .card h5{
     overflow: hidden;
@@ -92,7 +101,19 @@ iframe{
     .ubicacion-container{
         display: block;
     }
-    
+
+}
+
+@media(max-width:500px){
+    .carousel-item{
+        object-fit: cover;
+    }
+
+    .carousel-item img{
+        object-fit: cover;
+        height: 200px;
+        width: 500px;
+    }
 }
 
 @media (max-width:900px){
@@ -126,10 +147,12 @@ iframe{
         margin: 0;
     }
 
+
+
     .carrousel{
         width: fit-content;
         height: fit-content;
-        margin-top:10px;
+        margin: 0;
     }
 }
 

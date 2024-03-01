@@ -30,10 +30,7 @@ function Home(){
         <img src="/img/Header1.jpeg" class="d-block w-100" alt=""/>
     </div>
     <div class="carousel-item" data-bs-interval="5000">
-        <img src="/img/Header1.jpeg" class="d-block w-100" alt="..."/>
-    </div>
-    <div class="carousel-item" data-bs-interval="5000">
-        <img src="/img/Header1.jpeg" class="d-block w-100" alt="..."/>
+        <img src="/img/Header2.jpeg" class="d-block w-100" alt="..."/>
     </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -69,29 +66,29 @@ function Home(){
             {/* Auto 2 */}
 
             <div class="card">
-                <img class="card-img-top" src={cars[0]?.image[0]} alt="Card image cap"/>
+                <img class="card-img-top" src={cars[1]?.image[0]} alt="Card image cap"/>
                 <div class="card-body">
-                    <h5 class="card-title">{cars[0]?.name}</h5>
-                    <p class="card-text">${cars[0]?.price}</p>
-                    <a href={`https://automotoresmc.com.ar/usados/auto/${cars[0]?._id}`} class="boton-ver">Ver</a>
+                    <h5 class="card-title">{cars[1]?.name}</h5>
+                    <p class="card-text">${cars[1]?.price}</p>
+                    <a href={`https://automotoresmc.com.ar/usados/auto/${cars[1]?._id}`} class="boton-ver">Ver</a>
                 </div>
             </div>
             {/* Auto 3 */}
             <div class="card">
-                <img class="card-img-top" src={cars[0]?.image[0]} alt="Card image cap"/>
+                <img class="card-img-top" src={cars[2]?.image[0]} alt="Card image cap"/>
                 <div class="card-body">
-                    <h5 class="card-title">{cars[0]?.name}</h5>
-                    <p class="card-text">${cars[0]?.price}</p>
-                    <a href={`https://automotoresmc.com.ar/usados/auto/${cars[0]?._id}`} class="boton-ver">Ver</a>
+                    <h5 class="card-title">{cars[2]?.name}</h5>
+                    <p class="card-text">${cars[2]?.price}</p>
+                    <a href={`https://automotoresmc.com.ar/usados/auto/${cars[2]?._id}`} class="boton-ver">Ver</a>
                 </div>
             </div>
             {/* Auto 4 */}
             <div class="card">
-                <img class="card-img-top" src={cars[0]?.image[0]} alt="Card image cap"/>
+                <img class="card-img-top" src={cars[3]?.image[0]} alt="Card image cap"/>
                 <div class="card-body">
-                    <h5 class="card-title">{cars[0]?.name}</h5>
-                    <p class="card-text">${cars[0]?.price}</p>
-                    <a href={`https://automotoresmc.com.ar/usados/auto/${cars[0]?._id}`} class="boton-ver">Ver</a>
+                    <h5 class="card-title">{cars[3]?.name}</h5>
+                    <p class="card-text">${cars[3]?.price}</p>
+                    <a href={`https://automotoresmc.com.ar/usados/auto/${cars[3]?._id}`} class="boton-ver">Ver</a>
             </div>
             </div>
             </div>

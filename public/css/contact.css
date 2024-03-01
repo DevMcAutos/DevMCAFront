@@ -3,9 +3,115 @@
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 100px;
 }
 
 
 .iframe{
     margin-right: 50px;
+}
+
+.logos-contact{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+}
+
+.logos-contact img{
+    width: 50px;
+}
+
+.logos-contact p{
+    font-size: 20px;
+    margin:0 0 0 20px ;
+}
+
+.contact-container{
+    display: flex;
+    width: 40%;
+    flex-wrap: wrap;
+    animation:fade-in-left 0.7s ease;
+}
+
+.contact-container div{
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.instagram p{
+    font-size: 20px;
+    margin: 0;
+}
+
+.instagram{
+    display: flex;
+    flex-direction: column;
+}
+
+.instagram img{
+    width: 50px;
+}
+
+.logo-instagram{
+    display: flex;
+    align-items: center;
+}
+
+.logo-instagram p{
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+@media (max-width:900px){
+    .contacto-cont{
+        display: block;
+        margin: 0;
+    }
+
+    .iframe{
+        margin: 0;
+    }
+
+    .iframe h2{
+        font-size: 20px;
+    }
+
+    .contact-container{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .contact-container div{
+        margin: 0;
+    }
+
+    .logos-contact{
+        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .logos-contact p{
+        font-size: 15px;
+    }
+
+    .logos-contact img{
+        width: 30px;
+    }
+
+    .instagram{
+        margin-top: 30px;
+    }
+
+    .instagram img{
+        width: 35px;
+    }
+
+    .instagram p {
+        font-size: 15px;
+    }
 }

@@ -3,7 +3,7 @@ function Footer(){
         <div className="footer">
             <img src="/img/triangulos-division.png" alt="" className="divisor"/>
             <footer>
-                <img src="/img/logo2.png"  className="logo-footer" alt="" />
+                <img src="/img/logo.png"  className="logo-footer" alt="" />
                 <div className="footer-container">
                     
                     <div>
@@ -12,10 +12,10 @@ function Footer(){
                     </div>
                     <div>
                     <strong><p>Horarios de atención</p></strong>
-                        <p>Lunes a viernes de 8 a 20hs</p>
+                        <p>Lunes a viernes de 9 a 20hs</p>
                     </div>
                     <div>
-                    <strong><p>Telefono</p></strong>
+                    <strong><p>Teléfono</p></strong>
                         <p>+54 9 3513 13-4173</p>
                     </div>
                     <div>

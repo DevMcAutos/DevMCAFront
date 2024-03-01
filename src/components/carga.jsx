@@ -65,12 +65,22 @@ function Carga(){
             traction: data.traction,
             price:data.price,
             detalle:data.detalle,
-            image: [data.imagen1,data.imagen2,data.imagen3,data.imagen4,data.imagen5]
+            image: []
         }
+
+        const images = document.getElementsByClassName('car-images')
+        const imagesResult = []
+        for (let i = 0; i < images.length; i++) {
+            console.log(images[i].value);
+            if (images[i].value) {
+                imagesResult.push(images[i].value)
+            }
+        }
+        car.images = imagesResult
+
         const link = "https://dev-mca-api.vercel.app/newCar"
             axios.post(link, car)
             .then(response => {       
-                console.log(car.image);
             // Manejar la respuesta exitosa
                 console.log('Respuesta del servidor:', response.data);
                 setResponse("Auto agregado con exito")
@@ -143,6 +153,12 @@ function Carga(){
                         <input type="text" className="car-images" name="imagen3" {...register("imagen3")}/>
                         <input type="text" className="car-images" name="imagen4" {...register("imagen4")}/>
                         <input type="text" className="car-images" name="imagen5" {...register("imagen5")}/>
+
+                        <input type="text" className="car-images" name="imagen6" {...register("imagen6")}/>
+                        <input type="text" className="car-images" name="imagen7" {...register("imagen7")}/>
+                        <input type="text" className="car-images" name="imagen8" {...register("imagen8")}/>
+                        <input type="text" className="car-images" name="imagen9" {...register("imagen9")}/>
+                        <input type="text" className="car-images" name="imagen10" {...register("imagen10")}/>
                     </div>
                     <div>
                         <div className="images-container"></div>

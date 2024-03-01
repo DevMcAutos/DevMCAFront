@@ -1,20 +1,29 @@
+import { Link } from "react-router-dom"
+
 function Contact(){
     document.title = "MC Automotores | Contacto"
     return(
         <div className="contacto-cont">
-            <div className="footer-container">
+            <div className="contact-container">
                     <div>
-                    <div className="logos-footer">
-                        <img src="/img/whatsapp.png" alt="whatsapp-image"/>
-                        <p>+54 9 3513 13-4173</p>
+                    <div className="logos-contact">
+                    <Link to="https://web.whatsapp.com/send?phone=5493513134173" target="_blank"><img src="/img/whatsapp-negro.png" alt="whatsapp-image"/></Link>
+                        <Link to="https://web.whatsapp.com/send?phone=5493513134173" target="_blank"><p>+54 9 3513 13-4173</p></Link>
                     </div>
-                    <div className="logos-footer">
-                        <img src="/img/Gmail.png" alt="gmail-image" />
+                    <div className="logos-contact">
+                        <img src="/img/Gmail-negro.png" alt="gmail-image" />
                         <p>tomycardozo07@hotmail.com</p>
                     </div>
-                    <div className="logos-footer">
-                        <img src="/img/ubicacion.png" alt="ubicacion-image" />
-                        <p>RN9, Córdoba</p>
+                    <div className="logos-contact">
+                        <img src="/img/ubicacion-negro.png" alt="ubicacion-image" />
+                        <p>RN9 KM 749, Córdoba</p>
+                    </div>
+                    <div className="instagram">
+                        <p>Seguinos en instagram para enterarte de las novedades: </p>
+                        <div className="logo-instagram">
+                            <Link to="https://www.instagram.com/_mc_automotores/" target="_blank"><img src="/img/instagram-negro.png" alt="logo instagram" /></Link>
+                            <Link to="https://www.instagram.com/_mc_automotores/" target="_blank"><p>@_mc_automotores</p></Link>
+                        </div>
                     </div>
                     </div>
                 </div>

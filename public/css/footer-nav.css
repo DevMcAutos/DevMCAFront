@@ -95,21 +95,6 @@ footer{
     margin-top: 10px;
 }
 
-.logos-footer{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    padding: 10px;
-}
-
-.logos-footer img{
-    width: 30px;
-}
-
-.logos-footer p{
-    margin:0 0 0 10px ;
-}
-
 .footer{
     margin-top: auto;
     display: flex;
