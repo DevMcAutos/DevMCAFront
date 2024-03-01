@@ -8,7 +8,7 @@ function Footer(){
                     
                     <div>
                         <strong><p>Dirección</p></strong>
-                        <p>RN 9, Córdoba</p>
+                        <p>RN 9 KM 749, Córdoba</p>
                     </div>
                     <div>
                     <strong><p>Horarios de atención</p></strong>

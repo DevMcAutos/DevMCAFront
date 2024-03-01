@@ -15,8 +15,8 @@ const getCars = (name,nuevo, filters)=>{
         if(c.new){
             news.push(c)
         }else{
-            c[i].kms = c[i].kms.toLocateString('es-ES')
-            c[i].price = c[i].price.toLocateString('es-ES')
+            c.kms = new Intl.NumberFormat('es-ES').format(c.kms)
+            c.price = new Intl.NumberFormat('es-ES').format(c.price)
             used.push(c)
         }
     })
