@@ -49,6 +49,7 @@
 
 .ver-todos-form button{
     border: 0px;
+    padding: 5px;
     background-color: black;
     color: white;
     border-radius: 5px;
@@ -132,8 +133,13 @@
 .filters-button-container{
     display: flex;
     background-color: black;
+    padding: 3px;
     color: white;
+    margin-right: 350px;
+    border-radius: 5px;
 }
+
+
 #filters-flecha{
     margin: 0;
     transform: rotate(180deg);

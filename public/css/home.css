@@ -4,6 +4,46 @@
 
 .carrousel{
     margin-top: 70px;
+    z-index: 0;
+}
+
+.carrousel img{
+    width: 100vw;
+}
+
+.nuestros-autos{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.nuestros-autos .card {
+    width: 20%;;
+}
+
+
+.nuestros-autos .card h5{
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.card-text{
+    font-size: 20px;
+}
+
+.algunos-de-nuestros{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.boton-ver{
+    border: 0px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
 }
 
 .ubicacion-container{
@@ -25,12 +65,23 @@ iframe{
 
 .descripcion-container{
     margin-top: 30px;
-    
+    width: 50%;
+    text-align: start;
+    margin-left: 30px;
+}
+
+.descripcion-container h1{
+    overflow: hidden;
+}
+
+.descripcion-container p{
+    font-size: 25px;
 }
 
 @media (max-width: 1279px){
     .descripcion-container{
         text-align: center;
+        width: 100%;
     }
 
     iframe{
@@ -45,6 +96,19 @@ iframe{
 }
 
 @media (max-width:900px){
+
+
+    .nuestros-autos{
+        display:block ;
+        margin-bottom: 30px;
+    }
+
+    .nuestros-autos .card {
+        margin: auto;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
     .carrousel img{
         width: 160vw;
         margin: auto;
@@ -54,6 +118,13 @@ iframe{
         width: 100%;
     }
 
+    .descripcion-container p{
+        font-size: 15px;
+    }
+
+    .descripcion-container{
+        margin: 0;
+    }
 
     .carrousel{
         width: fit-content;

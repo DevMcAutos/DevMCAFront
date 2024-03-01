@@ -1,0 +1,11 @@
+
+.contacto-cont{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.iframe{
+    margin-right: 50px;
+}

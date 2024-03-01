@@ -1,22 +1,102 @@
+import axios from "axios"
+import { useState, useEffect} from "react"
+import carsController from "../service/getCars"
+
 
 function Home(){
     document.title = "MC Automotores | Inicio"
+    const [cars, setCars] = useState([])
+    const [limite, setLimite] = useState(0)
+    useEffect(()=>{
+        const name = ""
+        const filters = {}
+        const nuevo = false
+        if (limite < 5) {
+            setLimite(limite+1)
+        carsController.getCars(name,nuevo,filters)
+        .then(data=>{
+            setCars(data)
+            console.log(data);
+        })
+        }
+    }, [])
 
     return(
         <div>
             <div className="carrousel">
-                <img src="/img/Header1.jpeg" alt="Header"/>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+        <img src="/img/Header1.jpeg" class="d-block w-100" alt=""/>
+    </div>
+    <div class="carousel-item" data-bs-interval="5000">
+        <img src="/img/Header1.jpeg" class="d-block w-100" alt="..."/>
+    </div>
+    <div class="carousel-item" data-bs-interval="5000">
+        <img src="/img/Header1.jpeg" class="d-block w-100" alt="..."/>
+    </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
             </div>
             <div className="descripcion-container">
-                <h2>QUIENES SOMOS</h2>
-                <p>Somos una empresa familiar ubicada en la entrada de colonia caroya especializados en camionetas y en vehículos diesel. brindamos el servicio para facilitarte el cambio de tu vehiculo u obtener tu primer auto! vendemos 0km usados (autos y camionetas) recibimos tu usado no importa el año! Consultar por disponibilidad y precio de los 0km
-Nos manejamos con todas las formas de pago</p>
+                <h1>SOBRE NOSOTROS</h1>
+                <p>Somos una empresa familiar ubicada en la entrada de Colonia Caroya especializados en camionetas y en vehículos diesel.
+                    Brindamos el servicio para facilitarte el cambio de tu vehiculo u obtener tu primer auto!. 
+                    Vendemos 0km y usados (autos y camionetas) recibimos tu usado no importa el año! 
+                    Consultar por disponibilidad y precio de los 0km
+                    Nos manejamos con todas las formas de pago</p>
             </div>
-            <div className="ubicacion-container">
-                <h2>COMO LLEGAR</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3419.621941138741!2d-64.11129212353046!3d-31.008917276673365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94326303af8abe51%3A0x162d0a9a245fe180!2sMc%20Automotores!5e0!3m2!1ses-419!2sar!4v1691422074352!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p className="algunos-de-nuestros">Algunos de nuestros autos:</p>
+                <div className="nuestros-autos">
+                {/* Auto1 */}
+                <div class="card">
+                    <img class="card-img-top" src={cars[0]?.image[0]} alt="Card image cap"/>
+                <div class="card-body">
+                    <h5 class="card-title">{cars[0]?.name}</h5>
+                    <p class="card-text">${cars[0]?.price}</p>
+                    <a href={`https://automotoresmc.com.ar/usados/auto/${cars[0]?._id}`} class="boton-ver">Ver</a>
+                </div>
+                </div>
+            {/* Auto 2 */}
+
+            <div class="card">
+                <img class="card-img-top" src={cars[0]?.image[0]} alt="Card image cap"/>
+                <div class="card-body">
+                    <h5 class="card-title">{cars[0]?.name}</h5>
+                    <p class="card-text">${cars[0]?.price}</p>
+                    <a href={`https://automotoresmc.com.ar/usados/auto/${cars[0]?._id}`} class="boton-ver">Ver</a>
+                </div>
+            </div>
+            {/* Auto 3 */}
+            <div class="card">
+                <img class="card-img-top" src={cars[0]?.image[0]} alt="Card image cap"/>
+                <div class="card-body">
+                    <h5 class="card-title">{cars[0]?.name}</h5>
+                    <p class="card-text">${cars[0]?.price}</p>
+                    <a href={`https://automotoresmc.com.ar/usados/auto/${cars[0]?._id}`} class="boton-ver">Ver</a>
+                </div>
+            </div>
+            {/* Auto 4 */}
+            <div class="card">
+                <img class="card-img-top" src={cars[0]?.image[0]} alt="Card image cap"/>
+                <div class="card-body">
+                    <h5 class="card-title">{cars[0]?.name}</h5>
+                    <p class="card-text">${cars[0]?.price}</p>
+                    <a href={`https://automotoresmc.com.ar/usados/auto/${cars[0]?._id}`} class="boton-ver">Ver</a>
+            </div>
+            </div>
             </div>
         </div>
+
     );
 };
 

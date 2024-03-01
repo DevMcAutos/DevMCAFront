@@ -3,7 +3,7 @@ import { NavLink , Link} from "react-router-dom";
 function Nav (){
     return(
         <nav id="navbar" className="close-menu">
-            <Link to="/"><img src="/img/logo.svg" alt="logo.svg"  id="logo-pc"/></Link>
+            <Link to="/"><img src="/img/logo2.png" alt="logo.svg"  id="logo-pc"/></Link>
             <p id="menu-button" >Cerrar menu X</p>
             <div className="button-container">
                 <NavLink to="/">Inicio</NavLink>
